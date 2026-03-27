@@ -25,7 +25,7 @@ The specification consists of four canonical documents:
 | **SC-HDR-000001** | Document Header Specification — the normalized metadata header required for all canonical artifacts. |
 | **SC-SCOPE-000001** | Semantic Scope and Non-Prescriptive Clause — binding constraints on interpretation, projection, and the canonical boundary. |
 
-Each document is available as both markdown source (`.md`) and rendered PDF.
+Each document is available as both markdown source (`.md`) and rendered PDF in `standards/SC-AS/v1.0/pdf/`.
 
 ## Reading the Specification
 
@@ -42,45 +42,41 @@ Every canonical document carries a SHA-256 hash in its header, computed per SC-H
 3. Compute SHA-256 over the UTF-8 bytes with LF line endings
 4. Compare against the hash in the header
 
-Or use the provided tool:
+Or use the included verification script:
 
 ```bash
-bash release/export/restamp-sha.sh specs/canonical/SC-CORE-000001.md
+cd standards/SC-AS/v1.0
+python3 verify_bundle.py
 ```
 
-## PDF Export
-
-All PDFs are generated deterministically from markdown source using the included pipeline:
-
-```bash
-bash release/export/export.sh
-```
-
-Requirements: Pandoc 3.x+, XeLaTeX (MacTeX or TeX Live), Python 3.
-
-The pipeline reads metadata from each document's canonical header — no external configuration needed. Any SC-HDR-compliant document renders by passing its path.
+This independently verifies every SHA-256 hash, recomputes the Merkle root, validates RCC target coupling, and checks bundle composition. Zero dependencies — just Python 3.
 
 ## Repository Structure
 
 ```
-specs/canonical/          # Canonical specification source (.md)
-release/export/           # PDF export pipeline
-  ├── export.sh           # Build script (preflight → render → manifest)
-  ├── preflight.sh        # SC-AUTH-000001 pre-flight validator
-  ├── coherence.latex      # Pandoc LaTeX template
-  ├── boxed-wrap.lua       # Pandoc Lua filter
-  ├── restamp-sha.sh       # SHA-256 re-stamp tool
-  └── pdf/                # Generated PDFs (not committed)
-docs/
-  ├── SC-AUTH-000001.md    # Document authoring guide
-  └── site/               # Website content
+standards/SC-AS/v1.0/
+  ├── SC-CORE-000001.md         # Core Specification
+  ├── SC-AXIOM-000001.md        # Coherence Axioms
+  ├── SC-HDR-000001.md          # Document Header Specification
+  ├── SC-SCOPE-000001.md        # Semantic Scope
+  ├── pdf/                      # Rendered PDFs
+  ├── certificates/             # Reflexive Closure Certificates
+  ├── stewardship/              # Governance, license, naming, trademark, authorship
+  ├── RELEASE_MANIFEST.json     # All artifacts with SHA-256 hashes
+  ├── MERKLE_TREE.json          # Integrity tree
+  ├── MERKLE_ROOT.txt           # Root hash
+  ├── RELEASE_NOTES.md          # Release notes and conformance findings
+  ├── DOCUMENT-INDEX.md         # Full document index
+  ├── verify_bundle.py          # Independent integrity verification
+  ├── A-NOTE-TO-THE-READER.md   # Reader orientation
+  └── LICENSE                   # CC BY-ND 4.0
 ```
 
 ## License
 
 The SC-AS specification documents are released under the **Creative Commons Attribution-NoDerivatives 4.0 International License** (CC BY-ND 4.0).
 
-You are free to share the specification in its original form with attribution. You may not distribute modified versions of the canonical documents.
+You are free to share the specification in its original form with attribution. You may not distribute modified versions of the canonical documents. Independent implementation — including commercial implementation — is unrestricted.
 
 See [LICENSE](LICENSE) for the full license text.
 
@@ -94,7 +90,7 @@ Website: [coherenceresearch.com](https://coherenceresearch.com)
 
 If you reference SC-AS in academic or technical work:
 
-> Carroll, J. (2026). *Structural Coherence — Anchor Specification (SC-AS)*, v1.2.5. Coherence Research. https://coherenceresearch.com/standard
+> Carroll, J. (2026). *Structural Coherence — Anchor Specification (SC-AS)*, v1.0. Coherence Research. https://coherenceresearch.com/standard
 
 ## Contact
 
