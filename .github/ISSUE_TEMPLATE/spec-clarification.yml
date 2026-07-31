@@ -1,0 +1,47 @@
+name: Specification clarification
+description: Report a passage with multiple defensible readings, an apparent inconsistency, or a proposed structural counterexample.
+title: "[clarification] "
+labels: ["spec-clarification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These are the most valuable reports. Thank you for taking the time.
+
+        Use this template when the **content** of the specification is unclear, inconsistent, or appears to admit a counterexample. For typos, broken links, or formatting issues, use the `errata` template instead.
+
+  - type: input
+    id: document
+    attributes:
+      label: Affected document and section
+      description: e.g., `SC-CORE §4.2` or `SC-SCOPE §2`.
+      placeholder: SC-CORE §4.2
+    validations:
+      required: true
+
+  - type: textarea
+    id: passage
+    attributes:
+      label: Passage in question
+      description: Quote or paraphrase the passage. Brief is fine.
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Nature of the issue
+      description: |
+        State which of the following applies, and the structural argument:
+
+        - Multiple readings are defensible (which ones, and why each is defensible).
+        - Apparent inconsistency with another section (cite the other section).
+        - Proposed structural counterexample (state the counterexample).
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed resolution
+      description: Optional. If you see a way to resolve the issue while preserving the specification's structural commitments, describe it.

@@ -1,0 +1,50 @@
+name: Errata report
+description: Report a typo, broken link, formatting issue, header inconsistency, or integrity check failure in a canonical document.
+title: "[errata] "
+labels: ["errata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting errata. These reports keep the specification clean.
+
+        Use this template for: typos, broken links, header field inconsistencies, formatting that violates SC-HDR, integrity check failures (hash mismatch, Merkle root failure, RCC inconsistency).
+
+        For substantive ambiguity or apparent inconsistency in the specification content, use the `spec-clarification` template instead.
+
+  - type: input
+    id: document
+    attributes:
+      label: Affected document
+      description: Document identifier or path. e.g., `SC-CORE-000001`, `SC-SCOPE-000001`.
+      placeholder: SC-CORE-000001
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Section, paragraph, or line where the issue appears.
+      placeholder: "§3.2, Rule 4, second sentence"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is the issue, and what should it say instead?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: integrity
+    attributes:
+      label: Does this affect cryptographic integrity?
+      description: Check yes if you found a hash mismatch, Merkle root failure, or RCC inconsistency.
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true

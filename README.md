@@ -2,7 +2,7 @@
 
 **An open, formally structured specification defining structural coherence as a universal invariant.**
 
-Published by [Coherence Research](https://coherenceresearch.com) — a nonprofit public benefit organization.
+Published by [Coherence Research](https://coherenceresearch.com), an independent research effort.
 
 ---
 
@@ -80,9 +80,13 @@ You are free to share the specification in its original form with attribution. Y
 
 See [LICENSE](LICENSE) for the full license text.
 
+## Contributing
+
+SC-AS is an open standard, and open standards improve through challenge. Errata, ambiguity reports, and structural counterexamples are welcome via [Issues](https://github.com/Coherence-Research/public/issues); guides, educational material, and research notes accept ordinary pull requests. The canonical text of any released version is immutable — accepted changes to the specification land as the next versioned release, re-derived and re-hashed, with contributors credited in the release notes. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full rules and [SUPPORT.md](SUPPORT.md) for routing.
+
 ## About Coherence Research
 
-Coherence Research is a nonprofit public benefit organization that publishes open structural coherence standards. The institutional structure separates the authority to define from the incentive to monetize — the steward of the standard does not sell the implementation.
+Coherence Research is an independent research effort that publishes open structural coherence standards. The separation between the authority to define and the incentive to monetize is enforced by the license rather than by an institution: the canonical text is frozen, freely available, and identical for everyone, so no implementer — including any commercial work by the specification's authors — holds a privileged position over the standard itself. Stewardship of the canon confers responsibility for the record, not advantage in the market. The specification's own integrity machinery means you never have to take this on trust: every claim of what the canonical text says is independently verifiable.
 
 Website: [coherenceresearch.com](https://coherenceresearch.com)
 
@@ -98,6 +102,11 @@ Questions, feedback, or interest in collaboration:
 
 - Website: [coherenceresearch.com](https://coherenceresearch.com)
 - GitHub: [Coherence-Research](https://github.com/Coherence-Research)
+
+## Community
+
+- **Discussions:** [github.com/Coherence-Research/public/discussions](https://github.com/Coherence-Research/public/discussions) — questions, interpretation, and implementation chatter.
+- **Events:** see [`events/`](./events) for active and past events where Coherence Research participates.
 
 ---
 

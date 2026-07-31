@@ -1,0 +1,37 @@
+# CODEOWNERS for Coherence-Research/public
+#
+# Declares which maintainers must review changes to specific paths.
+# Enforced via GitHub branch protection (configured in repo settings, not here).
+#
+# Canonical specification documents and integrity artifacts require maintainer
+# review for any change. Modifications to canonical paths are not accepted via
+# community pull request — see CONTRIBUTING.md.
+#
+# NOTE: this file references @Coherence-Research/maintainers as a team handle.
+# Replace with an individual handle (e.g., @jasoncarrollkc) or create the team
+# in the org settings if it doesn't exist yet.
+
+# Canonical SC-AS documents
+/standards/SC-AS/v1.0/SC-CORE-000001.md       @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/SC-AXIOM-000001.md      @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/SC-HDR-000001.md        @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/SC-SCOPE-000001.md      @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/pdf/                    @Coherence-Research/maintainers
+
+# Integrity and release artifacts
+/standards/SC-AS/v1.0/RELEASE_MANIFEST.json   @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/MERKLE_TREE.json        @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/MERKLE_ROOT.txt         @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/verify_bundle.py        @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/certificates/           @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/stewardship/            @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/RELEASE_NOTES.md        @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/DOCUMENT-INDEX.md       @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/A-NOTE-TO-THE-READER.md @Coherence-Research/maintainers
+/standards/SC-AS/v1.0/LICENSE                 @Coherence-Research/maintainers
+
+# Release archives
+/releases/                                     @Coherence-Research/maintainers
+
+# Root license and governance
+/LICENSE                                       @Coherence-Research/maintainers

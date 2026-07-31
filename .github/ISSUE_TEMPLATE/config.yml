@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question, interpretation, or implementation chatter
+    url: https://github.com/Coherence-Research/public/discussions
+    about: For general questions, open a Discussion. Issues are for errata and spec clarification only.
+  - name: Frontier Tech Hackathon 2026 — Coherence multiplier
+    url: https://github.com/Coherence-Research/public/tree/main/events/frontier-tech-hackathon-2026
+    about: Hackathon brief, rubric, and how to claim the Coherence Research multiplier.
