@@ -10,7 +10,7 @@ Published by [Coherence Research](https://coherenceresearch.com), an independent
 
 The Structural Coherence — Anchor Specification (SC-AS) defines the conditions under which structure is admissible, representable, and enforceable — independent of domain, substrate, or scale.
 
-It is not a theory about what exists. It is a specification of what must hold for any structure to cohere. Every term traces to explicit primitives. Every claim carries its own dependency chain, necessity proof, and minimality proof. The specification defines its own conformance criteria internally — anyone can audit it for structural consistency without relying on an external authority.
+It is a specification: it states what must hold for any structure to cohere, whatever that structure is made of. Every term traces to explicit primitives. Every claim carries its own dependency chain, necessity proof, and minimality proof. The specification defines its own conformance criteria internally — anyone can audit it for structural consistency without relying on an external authority.
 
 SC-AS is designed to be readable by both humans and AI systems.
 

@@ -20,7 +20,7 @@ standards/SC-AS/v1.0/pdf/
 releases/
 ```
 
-These artifacts carry SHA-256 hashes, RCC attestations, and a Merkle root. Modifying any of them invalidates the integrity chain for the entire release. They are released under CC BY-ND 4.0 — you cannot publish modified versions under the same name.
+These artifacts carry SHA-256 hashes, RCC attestations, and a Merkle root. Modifying any of them invalidates the integrity chain for the entire release. They are released under CC BY-ND 4.0, which does not permit distributing modified versions. Names and marks are governed separately by SC-NAME-000001 and SC-TM-000001.
 
 If you believe a canonical document contains an error — even a typo — **open an issue, do not open a PR.** Errata that affect canonical content go through a controlled revision process that produces a new versioned artifact, not an edit-in-place.
 
