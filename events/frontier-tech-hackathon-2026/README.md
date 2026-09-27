@@ -197,7 +197,7 @@ rubric. Substrate choice does not affect scoring.
 
 ---
 
-*Coherence Research is a nonprofit public-benefit organization. The standards
+*Coherence Research is an independent research organization. The standards
 are free, open, and permanently archived. We are not selling anything to
 hackathon participants. We benefit when builders adopt structural rigor — that
 is the entire reason this multiplier exists.*
